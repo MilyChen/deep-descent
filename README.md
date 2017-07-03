@@ -3,8 +3,8 @@
 
 ## Game Summary 
 >Deep Descent is diving-themed vertical scroller game featuring 2D graphics. Players will be able to choose and unlock various divers as their avatar. Their goal will be to survive and explore the depths of the vast ocean. However, divers will need to beware of various obstacles such as jellyfish, octopus which can paralyze and blind the diver They will need to find previous bubbles along the way to survive their perilous journey. Beware though, the deeper the descent the more difficult it becomes!
-Video Demo: https://www.youtube.com/watch?v=jcctJCSZeYY&list=PLzQyvwXXqEpKWnPmMHkcQiOBSBf3zwTQA&index=2
 
+>Video Demo: https://www.youtube.com/watch?v=jcctJCSZeYY&list=PLzQyvwXXqEpKWnPmMHkcQiOBSBf3zwTQA&index=2
 
 >>### Notes
 >>>The character's movement may be controlled in 2 ways. 
