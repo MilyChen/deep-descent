@@ -27,6 +27,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        
+        //NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscores(), forKey: "highscores") //save index
+        
+    
+        NSUserDefaults.standardUserDefaults().setValue(Player.aplayer.getmusicv(), forKey: "bgsound")
+        NSUserDefaults.standardUserDefaults().setValue(Player.aplayer.getmusicfx(), forKey: "fxsound")
+        
+        
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscores()[0], forKey:"first")
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscores()[1], forKey:"second")
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscores()[2], forKey:"third")
+        
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscoreimages()[0], forKey:"firstimg")
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscoreimages()[1], forKey:"secondimg")
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscoreimages()[2], forKey:"thirdimg")
+        
     }
 
     func applicationWillEnterForeground(application: UIApplication) {
@@ -39,6 +56,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        NSUserDefaults.standardUserDefaults().setValue(Player.aplayer.getmusicv(), forKey: "bgsound")
+        NSUserDefaults.standardUserDefaults().setValue(Player.aplayer.getmusicfx(), forKey: "fxsound")
+        
+        
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscores()[0], forKey:"first")
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscores()[1], forKey:"second")
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscores()[2], forKey:"third")
+        
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscoreimages()[0], forKey:"firstimg")
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscoreimages()[1], forKey:"secondimg")
+        NSUserDefaults.standardUserDefaults().setValue(Scores.scores.gethighscoreimages()[2], forKey:"thirdimg")
+        
     }
 
 
